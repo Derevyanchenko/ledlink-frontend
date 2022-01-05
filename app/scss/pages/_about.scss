@@ -1,0 +1,98 @@
+// about
+
+@media (min-width: 1200px) {
+
+    .aboutPage .container {
+        max-width: 1120px;
+    }
+
+    .aboutPage {
+        padding-top: 294px;
+    }
+
+}
+
+body.about {
+    background: #000;
+
+    .floating-btn {
+        display: none !important; 
+    }
+
+}
+
+.aboutPage {
+    min-height: 1080px;
+    margin-bottom: 130px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 140px;
+}
+
+.aboutPage__content {
+    text-align: right;
+}
+
+.aboutPage__title {
+    font-family: "Spartan", sans-serif;
+    font-size: 48px;
+    letter-spacing: 3.12px;
+    color: #f0ecc9;
+    margin-bottom: 8px;
+    line-height: 1;
+}
+
+.aboutPage__subtitle {
+    font-size: 30px;
+    letter-spacing: 1.29px;
+    color: #fff;
+    margin-bottom: 35px;
+    line-height: 1;
+}
+
+.aboutPage__text {
+    max-width: 740px;
+    margin-left: auto;
+    p {
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+    }
+}
+
+// ###########################################
+// media queries
+
+@media (max-width: 990.99px) {
+
+    .aboutPage {
+        margin-bottom: 0;
+    }
+
+    .aboutPage__title {
+        font-size: 36px;
+        margin-bottom: 16px;
+    }
+
+    .aboutPage__subtitle {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 767.99px) {
+    .aboutPage {
+        min-height: 960px;
+        background-position-y: 80px;
+    }
+}
+
+@media (max-width: 479.99px) {
+
+    .aboutPage__title {
+        font-size: 28px;
+        line-height: 1.4;
+        margin-bottom: 12px;
+    }
+
+}
