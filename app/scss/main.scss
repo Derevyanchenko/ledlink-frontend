@@ -1,0 +1,17 @@
+// libs
+@import './libs/_nice-select.scss';
+
+// base
+@import '_variables.scss';
+@import 'base.scss';
+
+// section
+@import './blocks/_header.scss';
+@import './blocks/_footer.scss';
+@import './blocks/_contacts-section.scss';
+
+// pages
+@import './pages/_home.scss';
+@import './pages/_shop.scss';
+@import './pages/single-products.scss';
+

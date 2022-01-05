@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ledlink</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400&family=Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+    <body class="bg-black">
+
+        @@include('sections/header.html')
+
+        <section class="banner">
+            <div class="banner__container">
+                <div class="banner__content">
+                    <h1 class="banner__title">
+                        INSPIRED <br>BY LIGHT
+                    </h1>
+                    <p class="banner__text">
+                        אצלנו תמצאו מגוון פרתונות תאורה החל מגופי
+                        <br> תאורה מן המוכן וכלה ברכיבים להרכבת החזון שלכם
+                    </p>
+                </div>
+            </div>
+            <div class="banner__image--sm">
+                <img src="../img/banner-bg.jpg" alt="">
+            </div>
+        </section>
+        <!-- banner -->
+
+        <section class="gradient-bg">
+
+            <section class="parallax">
+                <div class="container">
+                    <div class="parallax__wrapper">
+                        <div class="parallax-lamp-small">
+                            <div class="parallax-lamp-small__top">
+                                <img src="../img/homepage-small-lamp.png" alt="">
+                            </div>
+                        </div>
+                        <!-- big -->
+                        <div class="parallax-lamp-big">
+                            <div class="parallax-lamp-big__top">
+                                <img src="../img/homepage-big-lamp-top.png" alt="">
+                            </div>
+                            <div class="parallax-lamp-big__bottom">
+                                <img src="../img/homepage-big-lamp-bottom.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- parallax section -->
+
+            <section class="homepageButtons">
+                <div class="container">
+                    <div class="homepageButtons__wrapper">
+
+                        <a href="#" class="homepageButtons__btn left-btn">גופי תאורה</a>
+                        <div class="homepageButtons__text text-center">
+                            <p>
+                                כאן יהיה טקסט שמדבר על שני האגפים של החברה- diy ו- pro לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן מנת. קולורס מונפרד אדנדום סילקוף, מרגשי ומרגשח. עמחליף הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה 
+                            </p>
+                        </div>
+                        <a href="#" class="homepageButtons__btn right-btn">רכיבים</a>
+                        
+                        <div class="homepageButtons__btns">
+                            <a href="#" class="homepageButtons__btn left-btn">גופי תאורה</a>
+                            <a href="#" class="homepageButtons__btn right-btn">רכיבים</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- homepageButtons section -->
+
+            <section class="homepageGallery">
+                <div class="container">
+                
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./img/homepage-slider-img-1.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/homepage-slider-img-2.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/homepage-slider-img-3.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/homepage-slider-img-4.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/homepage-slider-img-5.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/homepage-slider-img-2.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/homepage-slider-img-3.jpg">
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="homepageGallery__arrows">
+                            <div class="swiper-button-prev arrow-left"></div>
+                            <div class="swiper-button-next arrow-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- gallery section -->
+        
+        </section>
+        <!-- gradient-bg -->
+
+
+        @@include('sections/contacts-section.html')
+
+        @@include('sections/footer.html')
+
+    </body>
+</html>
