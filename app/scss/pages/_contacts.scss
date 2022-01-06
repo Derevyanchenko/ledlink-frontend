@@ -1,0 +1,236 @@
+// contacts
+
+.contactsPage {
+    padding-top: 142px !important;
+    margin-bottom: 23px;
+}
+
+body.floating-btn--hide {
+    .floating-btn {
+        display: none !important; 
+    }
+}
+
+.contactsPage__title {
+  font-size: 67px;
+  font-weight: 800 !important;
+  line-height: 1.01;
+  letter-spacing: 2.28px;
+  padding-bottom: 22px;
+  margin-bottom: 18px;
+  border-bottom: solid 1px #060605;
+  font-family: 'Assistant', sans-serif;
+  color: #000;
+}
+
+.contactsPage__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+}
+
+// left col
+.contactsPage__info-col {
+    padding-top: 115px;
+    padding-bottom: 85px;
+    padding-right: 6%;
+    padding-left: 7%;
+    flex: 0 0 45%;
+    max-width: 45%;
+}
+
+.contactsPage__info {
+
+}
+
+.contactsPage__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 28px;
+    color: #000;
+    .contactsPage__item-text.left {
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+
+    .contactsPage__item-text.right {
+        color: #000;
+        font-size: 20px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        min-width: 110px;
+    }
+}
+
+.map {
+    padding-top: 17px;
+}
+
+// right col
+.contactsPage__form-col {
+    padding-top: 115px;
+    padding-bottom: 85px;
+    background: #000;
+    flex: 0 0 55%;
+    max-width: 55%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    .contactsPage__title {
+        color: #fff;
+        border-color: #fff;
+        margin-bottom: 22px;
+    }
+}
+
+.contactsPage__form-wrapper {
+
+    .contacts__form {
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+
+        .form-control {
+            margin-bottom: 21px;
+            input {
+                font-family: 'Assistant', sans-serif !important;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            padding: 17px 14px;
+            border-radius: 0;
+            border: solid 1px #aeb2b2;
+            height: 205px;
+            -webkit-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+            background: transparent;
+            outline: none !important;
+            resize: none !important;
+
+            font-family: 'Assistant', sans-serif !important;
+            border: none;
+            background: #525252;
+            padding: 14px 16px;
+            font-size: 17px;
+            font-weight: 300;
+            color: #fff;
+            text-align: right;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .btn {
+            max-width: 331px;
+        }
+    }
+}
+
+// ####################################
+// media queries
+
+@media (max-width: 1439.99px) {
+
+    .contactsPage__form-col {
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .contactsPage__info-col {
+        padding-right: 6%;
+        padding-left: 5%;
+    }
+
+}
+
+
+@media (max-width: 1199.99px) {
+
+    .contactsPage__title {
+        font-size: 40px;
+    }
+
+    .contactsPage__form-col {
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .contactsPage__info-col {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-right: 4%;
+        padding-left: 4%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .contactsPage {
+        padding-top: 127px !important;
+        // margin-bottom: 0;
+    }
+
+}
+
+@media (max-width: 767.99px) {
+
+    .contactsPage__title {
+        font-size: 40px;
+    }
+
+    .contactsPage__form-col {
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .contactsPage__info-col {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-right: 4%;
+        padding-left: 4%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .contactsPage {
+        padding-top: 100px !important;
+        // margin-bottom: 0;
+    }
+
+    .contactsPage-container {
+        padding: 0 15px;
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contactsPage__info-col {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 40px;
+    }
+
+    .contactsPage {
+        margin-bottom: 60px;
+    }
+
+    .contactsPage__form-wrapper .contacts__form {
+        display: flex !important;
+    }
+
+}

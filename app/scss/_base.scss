@@ -826,6 +826,10 @@ body.bg-black {
   background: #010100;
 }
 
+input {
+  outline: none !important;
+}
+
 body .color-black {
   color: #000;
 }
@@ -912,6 +916,10 @@ a.btn {
     display: inline-block;
     font-size: 17px;
     font-weight: bold;
+    &:hover {
+      transition: all 0.3s;
+      background-color: #ffea7e;
+    }
 }
 
 // ############################
