@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400,800&family=Spartan&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-    <body>
+    <body class="floating-btn--hide">
 
         <div class="mobileMenu-overlay">
     <div class="mobileMenu">
@@ -96,103 +96,97 @@
     </div>
 </header>
 
-        <section class="section brands">
-            <div class="container shopPage-container brands-container">
-                <div class="brands-title">
-                    <h2>מותגים</h2>
+        <section class="section galleryPage">
+            <div class="contactsPage-container galleryPage-container">
+                <div class="galleryPage__wrapper">
+                    <div class="galleryPage__gallery-col galleryPage-col">
+                        <div class="scrollbar-container" data-scrollbar>
+                            <div class="galleryPage__gallery-col__scrollbar bg--dark">
+                                <div class="galleryPage__grid-wrapper">
+                                    <div class="galleryPage__grid">
+        
+                                        <div class="galleryPage__gallery-item galleryPage__item">
+                                            <img src="./img/gallery/gallery-img-1.png" alt="">
+                                        </div>
+        
+                                        <div class="galleryPage__gallery-item galleryPage__item">
+                                            <img src="./img/gallery/gallery-img-2.png" alt="">
+                                        </div>
+        
+                                        <div class="galleryPage__gallery-item galleryPage__item">
+                                            <img src="./img/gallery/gallery-img-3.png" alt="">
+                                        </div>
+        
+                                        <div class="galleryPage__gallery-item galleryPage__item">
+                                            <img src="./img/gallery/gallery-img-4.png" alt="">
+                                        </div>
+        
+                                        <div class="galleryPage__gallery-item galleryPage__item">
+                                            <img src="./img/gallery/gallery-img-5.png" alt="">
+                                        </div>
+        
+                                        <div class="galleryPage__gallery-item galleryPage__item">
+                                            <img src="./img/gallery/gallery-img-2.png" alt="">
+                                        </div>
+        
+                                        <div class="galleryPage__gallery-item galleryPage__item">
+                                            <img src="./img/gallery/gallery-img-4.png" alt="">
+                                        </div>
+        
+                                        <div class="galleryPage__gallery-item galleryPage__item">
+                                            <img src="./img/gallery/gallery-img-1.png" alt="">
+                                        </div>
+        
+                                        <div class="galleryPage__gallery-item galleryPage__item">
+                                            <img src="./img/gallery/gallery-img-5.png" alt="">
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scrollbar-track scrollbar-track-y">
+                            <div class="scrollbar-thumb scrollbar-thumb-y"></div>
+                        </div>
+
+                        <div class="gallery__bottom">
+                            <p class="gallery__bottom-text">גללו לעוד</p>
+                            <div class="stage">
+                                <div class="box bounce">
+                                    <div class="arrows">
+                                        <div class="arrow-top">
+                                            <img src="./img/gallery/arrow-bottom.svg" alt="">
+                                        </div>
+                                        <div class="arrow-bottom">
+                                            <img src="./img/gallery/arrow-bottom.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- galleryPage__info-col -->
+
+                    <div class="galleryPage__info-col galleryPage-col bg--light dir-ltr">
+                        <h2 class="contactsPage__title galleryPage__title">
+                            גלריית
+                            <br>
+                            היצירות<br>
+                            שלנו 
+                        </h2>
+
+                        <div class="galleryPage__info">
+                            <p>
+                                כאן יהיה טקסט שמדבר בקצרה על גופי התאורה והפרוייקטים שלדלינק מתמחים בהם. לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג. לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג. 
+                            </p>
+                        </div>
+                    </div>
+                    <!-- galleryPage__form-wrapper -->
                 </div>
-                
-                <div class="brands__wrapper">
-
-                    <div class="brands__col">
-                        <a href="brand.html" class="brands__item">
-                            <p class="brands__item-title">Qualitron</p>
-                            <div class="brands__item-img">
-                                <img src="./img/brands/brands-img-1.png" alt="img">
-                            </div>
-                        </a>
-                    </div>
-                    <!-- brands__col -->
-
-                    <div class="brands__col">
-                        <a href="brand.html" class="brands__item">
-                            <p class="brands__item-title">Edison Opto</p>
-                            <div class="brands__item-img">
-                                <img src="./img/brands/brands-img-2.png" alt="img">
-                            </div>
-                        </a>
-                    </div>
-                    <!-- brands__col -->
-
-                    <div class="brands__col">
-                        <a href="brand.html" class="brands__item">
-                            <p class="brands__item-title">Self Electronics</p>
-                            <div class="brands__item-img">
-                                <img src="./img/brands/brands-img-3.png" alt="img">
-                            </div>
-                        </a>
-                    </div>
-                    <!-- brands__col -->
-                </div>
-
-
             </div>
         </section>
 
-        
-<section class="contacts">
-    <div class="contacts__wrapper">
-        <div class="contacts__form-wrapper">
-            <h3 class="contacts__form-title section__title text-right">TURN THE LIGHT ON</h3>
-            <p class="contacts__text text-right">
-                הרשו לנו לסייע לכם למצוא את פתרון התאורה המושלם עבורכם. השאירו פרטים ונחזור אליכם בהקדם.
-            </p>
-            <form action="#">
-                <div class="contacts__form">
-                    <div class="form-col">
-                        <div class="form-control">
-                            <input type="tel" name="tel" name="tel" placeholder="טלפון*" maxlength="30" required>
-                        </div>
-                        <div class="form-control">
-                            <button class="btn btn-green">שלח</button>
-                        </div>
-                    </div>
-                    <div class="form-col">
-                        <div class="form-control">
-                            <input type="text" name="name" placeholder="שם" maxlength="30" required>
-                        </div>
-                        <div class="form-control">
-                            <input type="email" name="email" placeholder="דוא״ל" maxlength="30">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="contacts__form contacts__form-content--sm">
-                    <div class="form-control">
-                        <input type="text" name="name" placeholder="שם" maxlength="30" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="tel" name="tel" name="tel" placeholder="טלפון" maxlength="30" required>
-                    </div>
-                    <div class="form-control">
-                        <input type="email" name="email" placeholder="דוא״ל" maxlength="30">
-                    </div>
-                    <div class="form-control">
-                        <button class="btn btn-green">שלח</button>
-                    </div>
-                </div>
-
-            </form>
-        </div>
-        <!-- form weapper -->
-
-        <div class="contacts__img">
-            <img src="./img/contacts-section-img-right.png" alt="">
-        </div>                    
-
-    </div>
-</section>
-<!-- contacts section -->
 
         <a href="#" class="floating-btn">
     צור קשר

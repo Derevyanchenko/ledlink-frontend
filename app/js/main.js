@@ -1,6 +1,19 @@
 // ready
 $(document).ready(function() {
 
+    Scrollbar.initAll({
+        alwaysShowTracks: true,
+      });
+
+    $('.galleryPage__grid').masonry({
+        // options
+        itemSelector: '.galleryPage__item',
+        // columnWidth: 364,
+        singleMode: false,
+        isResizable: true,
+        isAnimated: true,
+      });
+
   $(".woocommerce-ordering select").niceSelect();
 
 if ( document.getElementsByClassName( 'swiper-container' ) ) {
@@ -32,16 +45,16 @@ if ( document.getElementsByClassName( 'swiper-container' ) ) {
 });
 }
 
-  $("form").on("submit", function(e) {
-    e.preventDefault();
-    $(this).trigger("reset");
-    close_popup();
-    show_thanks_popup();
+//   $("form").on("submit", function(e) {
+//     e.preventDefault();
+//     $(this).trigger("reset");
+//     close_popup();
+//     show_thanks_popup();
 
-    setTimeout(function(){
-      close_popup();
-    }, 5000);
-  });
+//     setTimeout(function(){
+//       close_popup();
+//     }, 5000);
+//   });
 
   // iframe lazy loading
 
@@ -99,8 +112,6 @@ $(window).on("scroll", function() {
 
 // parallax
   var banner = $(".banner");
-
-
   if ( 
       banner === null || banner === undefined || banner === '' ) {
           console.log( "if error" );
