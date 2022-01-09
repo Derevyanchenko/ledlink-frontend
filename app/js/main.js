@@ -111,48 +111,92 @@ $(window).on("scroll", function() {
   }
 
 // parallax
-  var banner = $(".banner");
-  if ( 
-      banner === null || banner === undefined || banner === '' ) {
-          console.log( "if error" );
-      return;
-  }
+//   var banner = $(".banner");
+//   if ( 
+//       banner === null || banner === undefined || banner === '' ) {
+//           console.log( "if error" );
+//       return;
+//   }
 
-  var bannerHeight = banner.outerHeight(true);
+//   var bannerHeight = banner.outerHeight(true);
 
-  var smallLampEl = $(".parallax-lamp-small");
-  var smallLampScrollPos = $(this).scrollTop() - bannerHeight;
-  var maxLampScrollPos = 337;
-  var smallLampStartPos = smallLampEl.offset().top;
-  // console.log( "flag: " + flag );
+//   var smallLampEl = $(".parallax-lamp-small");
+//   var smallLampScrollPos = $(this).scrollTop() - bannerHeight;
+//   var maxLampScrollPos = 337;
+//   var smallLampStartPos = smallLampEl.offset().top;
+//   // console.log( "flag: " + flag );
 
-  if ( flag == true ) {
-    initialSmallLampStartPos = smallLampStartPos;
-    flag = false;
-  }
+//   if ( flag == true ) {
+//     initialSmallLampStartPos = smallLampStartPos;
+//     flag = false;
+//   }
 
-  // console.log( $(this).scrollTop() - ( bannerHeight / 2 ) );
+//   // console.log( $(this).scrollTop() - ( bannerHeight / 2 ) );
 
-  if ( $(this).scrollTop() - ( bannerHeight / 2 )  > 0 ) {
+//   if ( $(this).scrollTop() - ( bannerHeight / 2 )  > 0 ) {
 
-    if ( smallLampScrollPos < maxLampScrollPos && smallLampScrollPos > initialSmallLampStartPos - bannerHeight ) {
-      // console.log( 'lamp will be scrolling now' )
-      // console.log( "bannerHeight : " + bannerHeight );
-      // console.log( "smallLampScrollPos : " + smallLampScrollPos );
-      smallLampEl.offset({ top: bannerHeight + smallLampScrollPos});
+//     if ( smallLampScrollPos < maxLampScrollPos && smallLampScrollPos > initialSmallLampStartPos - bannerHeight ) {
+//       // console.log( 'lamp will be scrolling now' )
+//       // console.log( "bannerHeight : " + bannerHeight );
+//       // console.log( "smallLampScrollPos : " + smallLampScrollPos );
+//       smallLampEl.offset({ top: bannerHeight + smallLampScrollPos});
 
-    }
+//     }
 
-    // console.log( bannerHeight );
-    // console.log( $(this).scrollTop() - bannerHeight );
-  }
+//     // console.log( bannerHeight );
+//     // console.log( $(this).scrollTop() - bannerHeight );
+//   }
 
-});
+// });
 
 
 $(window).on("load resize", function() {
 
+    // parallax
+    var banner = $(".banner");
+    // if ( 
+    //     typeof(banner) == null || banner === undefined || banner === '' ) {
+    //         console.log( "if error" );
+    //         return;
+    // }
 
+    if ( banner.length > 0 ) {
+        console.log( "if error" );
+        return;
+    }
+  
+    var bannerHeight = banner.outerHeight(true);
+  
+    var smallLampEl = $(".parallax-lamp-small");
+    var smallLampScrollPos = $(this).scrollTop() - bannerHeight;
+    var maxLampScrollPos = 337;
+    var smallLampStartPos = smallLampEl.offset().top;
+    // console.log( "flag: " + flag );
+  
+    if ( flag == true ) {
+      initialSmallLampStartPos = smallLampStartPos;
+      flag = false;
+    }
+  
+    // console.log( $(this).scrollTop() - ( bannerHeight / 2 ) );
+  
+    if ( $(this).scrollTop() - ( bannerHeight / 2 )  > 0 ) {
+  
+      if ( smallLampScrollPos < maxLampScrollPos && smallLampScrollPos > initialSmallLampStartPos - bannerHeight ) {
+        // console.log( 'lamp will be scrolling now' )
+        // console.log( "bannerHeight : " + bannerHeight );
+        // console.log( "smallLampScrollPos : " + smallLampScrollPos );
+        smallLampEl.offset({ top: bannerHeight + smallLampScrollPos});
+  
+      }
+  
+      // console.log( bannerHeight );
+      // console.log( $(this).scrollTop() - bannerHeight );
+    }
+  
+  });
+
+    // other
     if ( $(window).width() <= 991 ) {
 
         $(".menu-item-has-children > a").on("click", function(e) {
