@@ -125,6 +125,7 @@
 //  parallax
 
 .parallax {
+    pointer-events: none;
     // margin-top: 171px;
 }
 
@@ -133,7 +134,7 @@
 }
 
 .parallax-lamp-small {
-    left: 17%;
+    left: 22%;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -169,18 +170,42 @@
     .parallax-lamp-big__bottom {
         left: 107px;
     }
+
+    .parallax-lamp-small__top {
+        top: -285px;
+    }
+
+    .parallax-lamp-small {
+        left: 16%;
+    }
 }
 
 @media (max-width: 1199.99px) {
     .parallax-lamp-big__bottom {
         left: 30px;
     }
+
+    .parallax-lamp-small__top {
+        top: -300px;
+    }
+
+    .parallax-lamp-small {
+        left: 12%;
+    }
+}
+
+@media (max-width: 1199.99px) and (max-height: 1023.99px) {
+
+    .parallax-lamp-small__top {
+        top: -255px;
+    }
+
 }
 
 @media (max-width: 990.91px) {
 
     .parallax-lamp-small {
-        left: 80px;
+        left: 15px;
         max-width: 500px;
     }
 
@@ -191,6 +216,8 @@
 }
 
 
+
+
 @media (max-width: 767.99px) {
 
     .parallax-lamp-small {
@@ -199,11 +226,11 @@
     }
 
     .parallax-lamp-small__top {
-        top: -211px;
+        top: -185px;
     }
 
     .parallax {
-        padding-top: 50px;
+        padding-top: 40px;
     }
 
 }
@@ -220,7 +247,7 @@
     }
 
     .parallax-lamp-small__top {
-        top: -112px;
+        top: -150px;
     }
 
 }
@@ -228,7 +255,7 @@
 @media (max-width: 479.99px) {
 
     .parallax {
-        margin-top: -40px;
+        margin-top: -50px;
         padding-top: 0px;
     }
 
@@ -238,7 +265,7 @@
     }
 
     .parallax-lamp-small__top {
-        top: -112px;
+        top: -136px;
     }
 
     .parallax-lamp-big__bottom {
@@ -368,7 +395,7 @@
     }
 
     .homepageButtons {
-        margin-top: 135px;
+        margin-top: 100px;
     }
 
 }
